@@ -1,7 +1,18 @@
-body{
- background-color: #8ecadf;
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-break: break-all;
 }
-main{
+
+body{
+    background-color: yellow;
+}
+
+.container{
 display: inline-block;
 width: 800px;
 margin-top: 100px;
@@ -9,14 +20,34 @@ margin left: ((100% - 800px) / 2);
 margin right: ((100% - 800px) / 2);
 }
 
-div:first-of-type {
+.left column {
  display: inline-block;
  float: left;
  width: 40%;
  background-color: #0051a9;
+ padding: 40px;
 }
 
-div:last-of-type {
+.main-title{
+    margin-bottom: 100px;
+   color: #fff;
+   font size: 30px;
+   line-height: 30px;
+}
+
+ .bottom-links {
+   
+ }
+
+ .link {
+ color: #fff
+ }
+
+ .symbol {
+
+ }
+
+.right column {
  display: inline-block;
  float: left;
  width: 60%;
