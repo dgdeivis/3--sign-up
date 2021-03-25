@@ -1,55 +1,130 @@
 body,
 body * {
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    word-break: break-all;
+ margin: 0;
+ padding: 0;
+ vertical-align: top;
+ box-sizing: border-box;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body{
-    background-color: yellow;
+body {
+ background-color: #8ecadf;
 }
 
-.container{
-display: inline-block;
-width: 800px;
-margin-top: 100px;
-margin left: ((100% - 800px) / 2);
-margin right: ((100% - 800px) / 2);
+.container {
+ display: inline-block;  
+ width: 800px;
+ margin-top: 100px;
+ margin-left: calc((100% - 800px) / 2);
+ margin-right: calc((100% - 800px) / 2);
 }
 
-.left column {
- display: inline-block;
+.left-column {
+ display: inline-block; 
  float: left;
  width: 40%;
  background-color: #0051a9;
  padding: 40px;
 }
 
-.main-title{
-    margin-bottom: 100px;
-   color: #fff;
-   font size: 30px;
-   line-height: 30px;
+.main-title {
+ display: inline-block;
+ width: 100%;
+ margin-bottom: 100px;
+ color: #fff;
+ font-size: 30px;
+ line-height: 30px;
 }
 
- .bottom-links {
-   
- }
+.bottom-links {
+ display: inline-block;
+ width: 100%;
+}
 
- .link {
+.link {
+ display: inline-block;
  color: #fff
- }
+}
 
- .symbol {
+.symbol {
+ display: inline-block;
+ color: #fff;
+}
 
- }
-
-.right column {
+.right-column {
  display: inline-block;
  float: left;
  width: 60%;
  background-color: #fff;
+ padding: 60px;
+}
+
+.form {
+ display: inline-block;
+ width: 100%;
+}
+
+.form > .form-row {
+ display: inline-block;
+ width: 100%;
+ margin-bottom: 30px;
+}
+.form > .form-row:last-of-type {
+ margin-bottom: 0;
+}
+
+.form > form-row > label {
+ display: inline-block;
+ width: 100%;
+ font-size: 14px;
+ line-height: 20px;
+ color: #777;
+ text-transform: uppercase;
+
+}
+
+.form > form-row > input {
+ display: inline-block;
+ width: 100%;
+ line-height: 35px;
+ font-size: 18px;
+ border: none;
+ border-bottom: 2px solid #ccc;
+}
+
+.form > .form-row > button {
+ border: none;
+ background-color: #015cda;
+ color: #fff;
+ float: left;
+ padding: 10px;
+ font-size: 18px;
+ line-height: 20px;
+ font-weight: bold;
+ border-radius: 20px;
+ padding-left: 40px;
+ padding-right: 40px;
+}
+
+.form > .form-row > span {
+float: left;
+padding: 10px;
+font-size: 18px;
+line-height: 20px;
+font-weight: bold;
+margin-left: 10px;
+}
+
+.form > .form-row > a {
+float: left;
+padding: 10px;
+font-size: 18px;
+line-height: 20px;
+font-weight: bold;
+color: #015cda;
+text-decoration: none;
+}
+
+.form > .form.row > a:hover {
+text-decoration: underline;
 }
