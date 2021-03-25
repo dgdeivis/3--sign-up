@@ -4,7 +4,6 @@ body * {
  padding: 0;
  vertical-align: top;
  box-sizing: border-box;
- position: static;
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -18,20 +17,23 @@ body {
  margin-top: 100px;
  margin-left: calc((100% - 800px) / 2);
  margin-right: calc((100% - 800px) / 2);
+ position: relative;
 }
 
 .left-column {
  display: inline-block; 
- float: left;
  width: 40%;
- background-color: #0051a9;
  padding: 40px;
+ background-color: #0051a9;
+ position: absolute;
+ top: 30px;
+ left: 0;
+ bottom: 30px;
 }
 
 .main-title {
  display: inline-block;
  width: 100%;
- margin-bottom: 100px;
  color: #fff;
  font-size: 30px;
  line-height: 30px;
@@ -39,7 +41,10 @@ body {
 
 .bottom-links {
  display: inline-block;
- width: 100%;
+ position: absolute;
+ bottom: 20px;
+ left: 30px;
+ right: 30px;
 }
 
 .link {
@@ -53,22 +58,20 @@ body {
 }
 
 .right-column {
- display: inline-block;
- float: left;
  width: 60%;
- background-color: #fff;
  padding: 60px;
+ float: right;
+ background-color: #fff;
  position: relative;
 }
 
 .close {
  display: inline-block;
  width: 60px;
- text-align: center;
  height: 60px;
- line-height: 54px;
+ text-align: center;
  font-size: 30px;
- background-color: salmon;
+ line-height: 54px;
  position: absolute;
  top: 0;
  right: 0;
@@ -107,27 +110,32 @@ body {
  border-bottom: 2px solid #ccc;
 }
 
+.form > .form-row > input:focus {
+    background-color: yellow;
+    outline: 2px dashed red;
+}
+
 .form > .form-row > button {
- border: none;
- background-color: #015cda;
- color: #fff;
- float: left;
- padding: 10px;
- font-size: 18px;
- line-height: 20px;
- font-weight: bold;
+    float: left;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    background-color: #015cda;
+    color: #fff;
+    border: none;
  border-radius: 20px;
- padding-left: 40px;
- padding-right: 40px;
+ cursor: pointer;
 }
 
 .form > .form-row > span {
 float: left;
 padding: 10px;
+margin-left: 10px;
 font-size: 18px;
 line-height: 20px;
-font-weight: bold;
-margin-left: 10px;
 }
 
 .form > .form-row > a {
@@ -135,7 +143,6 @@ float: left;
 padding: 10px;
 font-size: 18px;
 line-height: 20px;
-font-weight: bold;
 color: #015cda;
 text-decoration: none;
 }
