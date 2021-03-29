@@ -8,7 +8,12 @@ body * {
 }
 
 body {
+ height: 100vh;
  background-color: #8ecadf;
+ background-image: url(../img/hill.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: bottom center;
 }
 
 .container {
@@ -29,6 +34,10 @@ body {
  top: 30px;
  left: 0;
  bottom: 30px;
+ background-image: url(../img/hill.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: bottom center;
 }
 
 .main-title {
