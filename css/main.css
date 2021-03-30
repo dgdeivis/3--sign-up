@@ -1,161 +1,162 @@
 body,
 body * {
- margin: 0;
- padding: 0;
- vertical-align: top;
- box-sizing: border-box;
- font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
- height: 100vh;
- background-color: #8ecadf;
- background-image: url(../img/hill.jpg);
- background-repeat: no-repeat;
- background-size: cover;
- background-position: bottom center;
+  height: 100vh;
+  background-color: #8ecadf;
+  position: relative;
+}
+
+.background {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/hill.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  filter: blur(24px);
 }
 
 .container {
- display: inline-block;  
- width: 800px;
- margin-top: 100px;
- margin-left: calc((100% - 800px) / 2);
- margin-right: calc((100% - 800px) / 2);
- position: relative;
+  display: inline-block;
+  width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .left-column {
- display: inline-block; 
- width: 40%;
- padding: 40px;
- background-color: #0051a9;
- position: absolute;
- top: 30px;
- left: 0;
- bottom: 30px;
- background-image: url(../img/hill.jpg);
- background-repeat: no-repeat;
- background-size: cover;
- background-position: bottom center;
+  display: inline-block;
+  width: 40%;
+  padding: 40px;
+  background-color: #0051a9;
+  background-image: url(../img/hill.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  bottom: 30px;
 }
 
 .main-title {
- display: inline-block;
- width: 100%;
- color: #fff;
- font-size: 30px;
- line-height: 30px;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .bottom-links {
- display: inline-block;
- position: absolute;
- bottom: 20px;
- left: 30px;
- right: 30px;
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
 }
 
 .link {
- display: inline-block;
- color: #fff
+  display: inline-block;
+  color: #fff;
 }
 
 .symbol {
- display: inline-block;
- color: #fff;
+  display: inline-block;
+  color: #fff;
 }
 
 .right-column {
- width: 60%;
- padding: 60px;
- float: right;
- background-color: #fff;
- position: relative;
+  width: 60%;
+  padding: 60px;
+  float: right;
+  background-color: #fff;
+  position: relative;
 }
 
 .close {
- display: inline-block;
- width: 60px;
- height: 60px;
- text-align: center;
- font-size: 30px;
- line-height: 54px;
- position: absolute;
- top: 0;
- right: 0;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .form {
- display: inline-block;
- width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 
 .form > .form-row {
- display: inline-block;
- width: 100%;
- margin-bottom: 30px;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
 }
 .form > .form-row:last-of-type {
- margin-bottom: 0;
+  margin-bottom: 0;
 }
 
-.form > form-row > label {
- display: inline-block;
- width: 100%;
- font-size: 14px;
- line-height: 20px;
- color: #777;
- text-transform: uppercase;
-
+.form > .form-row > label {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  color: #777;
+  text-transform: uppercase;
 }
-
-.form > form-row > input {
- display: inline-block;
- width: 100%;
- line-height: 35px;
- font-size: 18px;
- border: none;
- border-bottom: 2px solid #ccc;
+.form > .form-row > input {
+  display: inline-block;
+  width: 100%;
+  line-height: 35px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid #ccc;
 }
-
 .form > .form-row > input:focus {
-    background-color: yellow;
-    outline: 2px dashed red;
+  background-color: yellow;
+  outline: 2px dashed red;
 }
-
 .form > .form-row > button {
-    float: left;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: bold;
-    background-color: #015cda;
-    color: #fff;
-    border: none;
- border-radius: 20px;
- cursor: pointer;
+  float: left;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  background-color: #015cda;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
-
 .form > .form-row > span {
-float: left;
-padding: 10px;
-margin-left: 10px;
-font-size: 18px;
-line-height: 20px;
+  float: left;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 20px;
 }
-
 .form > .form-row > a {
-float: left;
-padding: 10px;
-font-size: 18px;
-line-height: 20px;
-color: #015cda;
-text-decoration: none;
+  float: left;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #015cda;
+  text-decoration: none;
 }
-
-.form > .form.row > a:hover {
-text-decoration: underline;
+.form > .form-row > a:hover {
+  text-decoration: underline;
 }
